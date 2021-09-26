@@ -1,0 +1,32 @@
+/*contacto*/
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+
+    .contacto__horarios {
+        border: solid #ddd;
+        width: 50%;
+        padding: 40px;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+
+        
+    }
+
+    .contacto__mapa {
+        border: solid #ddd;
+        overflow: hidden;
+        width: 50%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+}
