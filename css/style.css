@@ -307,6 +307,15 @@ header img {
   }
 }
 
+.container__titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*contacto*/
 .contacto {
   width: 100%;
