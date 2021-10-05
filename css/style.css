@@ -227,7 +227,7 @@ header img {
   padding: 8rem;
 }
 
-.lugares .row__cards {
+.lugares .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
