@@ -1,30 +1,68 @@
 /*contacto*/
-.contacto {
+.contactodiv {
     width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 100px;
-
+    justify-content: space-evenly;
     .contacto__horarios {
-        border: solid #ddd;
-        width: 50%;
-        padding: 40px;
-        overflow: hidden;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 400px;  
+        
     }
 
     .contacto__mapa {
-        border: solid #ddd;
         overflow: hidden;
-        width: 50%;
-        padding: 40px;
-        display: flex;
-        justify-content: center;
 
+    }
+}
+
+@media (max-width: 400px) {
+    .contactodiv {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .contacto__horarios {
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .contacto__mapa {
+            overflow: hidden;
+
+        }
+    }
+}
+
+@media(min-width: 401px) and (max-width: 799px) {
+    .contactodiv {
+        width: 100%;
+        height: 100%;
+
+        .contacto__horarios {
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .contacto__mapa {
+            overflow: hidden;
+
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .contactodiv {
+        width: 100%;
+        height: 100%;
+
+        .contacto__horarios {
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .contacto__mapa {
+            overflow: hidden;
+
+        }
     }
 }

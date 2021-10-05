@@ -102,3 +102,45 @@
     }
     
 }
+@media (max-width: 400px){
+    .contenido__home{
+        display: flex;
+        align-items: center;
+        margin-top: 8%;
+        background-color: #ef9630;
+        color: #fff;
+        p{
+            text-align: left;
+            font-size: 15px;
+            margin: 0% 10%;
+        }
+    }
+}
+@media(min-width: 401px) and (max-width: 799px){
+    .contenido__home{
+        display: flex;
+        align-items: center;
+        margin-top: 8%;
+        background-color: #ef9630;
+        color: #fff;
+        p{
+            text-align: right;
+            font-size: 10px;
+            margin: 0% 10%;
+        }
+    }
+}
+@media (min-width: 800px){
+    .contenido__home{
+        display: flex;
+        align-items: center;
+        margin-top: 8%;
+        background-color: #fff;
+        color:#ef9630;
+        p{
+            text-align: left;
+            font-size: 15px;
+            margin: 0% 10%;
+        }
+    }
+}
