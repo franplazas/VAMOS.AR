@@ -14,21 +14,20 @@ $breakpoints: (
     }
     
 }
-.container {
+.container .quehacer{
     padding: 20px 15px;
-   
     div div {
         background-color: $gris;
             color: #CE7D35;
         @include media-up(sm){
-            background-color: #CE7D35;
             color: rgb(255, 255, 255);
             
         }
     }
-    
+   
 }
 .container__titulo{
-    display: flex;
-    justify-content: center;
+    color: #fff;
+    background-color: #CE7D35;
+    
 }

@@ -88,7 +88,7 @@ header img {
 /*banner*/
 .banner {
   width: 100%;
-  height: 600px;
+  height: 400px;
   -webkit-animation: banner 15s infinite linear alternate;
           animation: banner 15s infinite linear alternate;
   background-size: 100% 100%;
@@ -133,9 +133,9 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: self-start;
-      -ms-flex-align: self-start;
-          align-items: self-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .banner__name h1 {
@@ -145,12 +145,6 @@ header img {
 
 .banner__name p {
   color: #c7c7c7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: 40px;
 }
 
@@ -212,9 +206,20 @@ header img {
 }
 
 /*contenido home*/
-.contenidoHome {
-  padding: 4rem;
+.contenido__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 8%;
+}
+
+.contenido__home p {
+  text-align: left;
   font-size: 15px;
+  margin: 0% 10%;
 }
 
 /*img home*/
@@ -222,14 +227,13 @@ header img {
   padding: 8rem;
 }
 
-.lugares .row {
+.lugares .row__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 5px;
 }
 
 /*dondeir*/
@@ -240,9 +244,11 @@ header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0% 15%;
+  margin: 5%;
 }
 
-.row {
+.row .dondeir {
   text-align: end;
 }
 
@@ -291,29 +297,24 @@ header img {
 }
 
 /*que hacer*/
-.container {
+.container .quehacer {
   padding: 20px 15px;
 }
 
-.container div div {
+.container .quehacer div div {
   background-color: #b4b2b2;
   color: #CE7D35;
 }
 
 @media screen and (min-width: 540px) {
-  .container div div {
-    background-color: #CE7D35;
+  .container .quehacer div div {
     color: white;
   }
 }
 
 .container__titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  color: #fff;
+  background-color: #CE7D35;
 }
 
 /*contacto*/
