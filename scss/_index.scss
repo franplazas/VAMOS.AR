@@ -8,22 +8,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .banner__items {
         width: 100%;
         height: 100%;
         position: absolute;
+        z-index: 1;
         top: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.4);
         display: flex;
         justify-content: center;
-      
+
     }
 }
+
 .banner__name {
     width: 75%;
     height: 50%;
-    z-index: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -33,15 +36,18 @@
         color: $blanco;
         font-size: 70px;
     }
+
     p {
         color: #c7c7c7;
         font-size: 40px;
     }
+
     button {
         background: #ef9630;
         padding: 10px;
         display: inline-block;
         border-radius: 50px;
+
         a {
             text-decoration: none;
             color: #fff;
@@ -75,72 +81,130 @@
     }
 }
 
+@media (max-width: 300px) {
+    .banner__name {
+        width: 65%;
+        height: 45%;
+        z-index: 1;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        a {
+            font-size: 10px;
+        }
+
+    }
+}
 
 
 /*contenido home*/
-.contenido__home{
+
+
+.servicios {
     display: flex;
-    align-items: center;
-    margin-top: 8%;
-    p{
-        text-align: left;
-        font-size: 15px;
-        margin: 0% 10%;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.in-flex {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
 }
 
 
+.in-flex:first-child {
+    flex: 2;
+    padding: 25px;
+}
+
+.in-flex div {
+    padding: 10px;
+    margin: 10px;
+    font-size: 10px;
+}
+.in-flex h3, p{
+    font-size: 15px;
+}
+
+@media(max-width: 1024px) {
+
+    .in-flex {
+        flex: 1;
+        min-width: 100%;
+        padding: 25px;
+        font-size: 10px;
+    }
+
+    .in-flex img {
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .in-flex div {
+        background-color: #EFEFF3;
+        padding: 25px;
+        margin: 10px;
+
+    }
+
+}
 
 /*img home*/
-
-.lugares {
-    padding: 8rem;
-    .row{
-        display: flex;
-        justify-content: space-evenly;
-        
-    }
+#bienvenidos {
+    text-align: center;
+    margin: 50px;
+    color: #242463;
     
 }
-@media (max-width: 400px){
-    .contenido__home{
-        display: flex;
-        align-items: center;
-        margin-top: 8%;
-        background-color: #ef9630;
-        color: #fff;
-        p{
-            text-align: left;
-            font-size: 15px;
-            margin: 0% 10%;
-        }
-    }
+#blog h3, h4{
+    text-align: center;
+    color: #242463;
 }
-@media(min-width: 401px) and (max-width: 799px){
-    .contenido__home{
-        display: flex;
-        align-items: center;
-        margin-top: 8%;
-        background-color: #ef9630;
-        color: #fff;
-        p{
-            text-align: right;
-            font-size: 10px;
-            margin: 0% 10%;
-        }
-    }
+#blog .contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
 }
-@media (min-width: 800px){
-    .contenido__home{
-        display: flex;
-        align-items: center;
-        margin-top: 8%;
-        background-color: #fff;
-        color:#ef9630;
-        p{
-            text-align: left;
-            font-size: 15px;
-            margin: 0% 10%;
-        }
-    }
+
+#blog article {
+    margin: 15px;
+}
+#blog img{
+    width: 100%;
+    max-width: 280px;
+}
+#info{
+    background: #EFEFF3;
+    color: #242463;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info__viajes{
+    margin: 20px;
+}
+.info__viajes img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
 }

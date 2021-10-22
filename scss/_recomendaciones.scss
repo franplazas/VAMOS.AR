@@ -1,14 +1,43 @@
 /*dondeir*/
-.titulo__dondeir{
+.findings {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0% 15%;
-    margin: 5%;
-    
+    color: #242463;
+    .findingsContenedor {
+        flex: 1;
+        min-width: 200px;
+        padding: 10px;
+        h1{
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+    }
+    .findingsContenedor div {
+        padding: 10px 80px;
+        margin: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .findingsContenedor h2{
+        font-size: 15px;
+        
+    }
+    .findingsContenedor p{
+        font-size: 14px;
+        background-color: #EFEFF3;
+    }
 }
-.row .dondeir{
-    text-align:end;
+.findingsContenedor:first-child {
+    flex: 2;
+    padding: 25px;
 }
+
+
+
+/*galeria*/
 .grid__img:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
