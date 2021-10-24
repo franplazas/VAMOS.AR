@@ -612,26 +612,22 @@ body {
 /*Preguntas frecuentes*/
 /*banner*/
 /*accordion*/
-.accordionTitulo {
-  text-align: justify;
-}
-
 .accordion {
   width: 100%;
   height: 100%;
   padding: 50px;
 }
 
-.accordion-button {
+.accordion-item {
+  font-size: 15px;
+  border: 1px solid #242463;
+}
+
+.accordion-item .accordion-button {
   font-size: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.accordion-item {
-  font-size: 15px;
-  border: 1px solid #242463;
 }
 
 #accordionColors h2 button {
@@ -690,7 +686,7 @@ body {
   text-align: center;
 }
 
-.contact .content h2 {
+.contact h2 {
   font-size: 36px;
   font-weight: 500;
   color: #0f6464;
