@@ -2,7 +2,7 @@
 @import url(./_generales.scss);
 @import url(_generales.scss);
 @import url(./_generales.scss);
-@import url(./_generales.scss);
+@import url(_generales.scss);
 * {
   padding: 0px;
   margin: 0px;
@@ -710,120 +710,90 @@ body {
 }
 
 /*contacto*/
-.contactodiv {
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+input,
+textarea {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 10%;
+  margin-bottom: 20px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 17px;
+  border: none;
 }
 
-.contactodiv .contacto__horarios {
-  text-align: center;
-  font-size: 15px;
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
 }
 
-.contactodiv .contacto__mapa {
-  overflow: hidden;
+#boton {
+  background: #CD803E;
+  color: #EFEFF3;
+  padding: 20px;
 }
 
-@media (max-width: 400px) {
-  .contactodiv {
+#boton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  form {
     width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .contactodiv .contacto__horarios {
-    overflow: hidden;
-    text-align: center;
-  }
-  .contactodiv .contacto__mapa {
-    overflow: hidden;
-  }
-}
-
-@media (min-width: 401px) and (max-width: 799px) {
-  .contactodiv {
-    width: 100%;
-    height: 100%;
-  }
-  .contactodiv .contacto__horarios {
-    overflow: hidden;
-    text-align: center;
-  }
-  .contactodiv .contacto__mapa {
-    overflow: hidden;
-  }
-}
-
-@media (min-width: 800px) {
-  .contactodiv {
-    width: 100%;
-    height: 100%;
-  }
-  .contactodiv .contacto__horarios {
-    overflow: hidden;
-    text-align: center;
-  }
-  .contactodiv .contacto__mapa {
-    overflow: hidden;
   }
 }
 
 /*registro*/
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 40px 10px;
+.form__register {
+  width: 400px;
+  background: #EFEFF3;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  color: black;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
 }
 
-.formulario .formulario__titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 30px;
-  border: solid #a3a09f;
-  border-radius: 30px;
-  padding: 5px;
+.controls {
+  width: 100%;
+  background: #EFEFF3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #fff;
 }
 
-.formulario .formulario__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.form__register p {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
 }
 
-fieldset {
-  display: block;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove;
+.form__register a {
+  color: black;
+  text-decoration: underline;
+}
+
+.form__register .botons {
+  border: none;
+  width: 100%;
+  background: #242463;
+  padding: 12px;
+  margin: 16px 0;
+  font-size: 16px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

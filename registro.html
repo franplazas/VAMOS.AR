@@ -28,7 +28,7 @@
                     <a href="./index.html" class="nav-menu-link nav-link">Inicio</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="./recomendaciones.html" class="nav-menu-link nav-link">Recomendaciones</a>
+                    <a href="./sugerencias.html" class="nav-menu-link nav-link">Sugerencias</a>
                 </li>
                 <li class="nav-menu-item">
                     <a href="./preguntasfrecuentes.html" class="nav-menu-link nav-link">Preguntas Frecuentes</a>
@@ -48,55 +48,20 @@
             <h2>Registro</h2>
         </div>
     </div>
-    <section class="formulario">
-
-        <form class="formulario__form">
-            <h1 class="formulario__titulo">Registrarme</h1>
-            <div>
-                <label for="fname">Nombre:</label>
-                <input required type="text" placeholder="Ej: Francis" id="fname" name="fname">
-            </div>
-            <div>
-                <label for="lname">Apellido:</label>
-                <input required type="text" placeholder="Ej: Plazas" id="lname" name="lname">
-            </div>
-            <div>
-                <label for="sexo">Sexo:</label>
-                <input required type="radio" id="femenino" name="sexo" value="Femenino">
-                <label for="femenino">Femenino</label>
-                <input required type="radio" id="masculino" name="sexo" value="Masculino">
-                <label for="masculino">Masculino</label>
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input required type="text" placeholder="123@tarara.com" id="email" name="email">
-            </div>
-            <div>
-                <label for="pais">Pais de Residencia:</label>
-                <select name="pais">
-                    <option value="default">Seleccione una opcion</option>
-                    <option value="venezuela">Venezuela</option>
-                    <option value="argentina">Argentina</option>
-                    <option value="uruguay">Uruguay</option>
-                </select>
-            </div>
-            <fieldset>
-                <legend for="checkbox">Acepta terminos y condiciones</legend>
-                <input required type="checkbox" name="acepta" value="1">
-            </fieldset>
-            <div>
-                <input type="submit" value="Registrar">
-                <input type="reset" value="Borrar todo">
-            </div>
-        </form>
+    <section class="form__register">
+        <input class="controls" type="text" name="nombre" id="nombres" placeholder="Ingrese su Nombre">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <input class="controls" type="email" name="coreo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acerdo con <a href="">Termino y condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="">¿Ya tengo cuenta?</a></p>
     </section>
-
-
     <footer class="footer">
         <div class="footer__list">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="recomendaciones.html">Sugerencias</a></li>
+                <li><a href="sugerencias.html">Sugerencias</a></li>
                 <li><a href="preguntasfrecuentes.html">Preguntas frecuentes</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="registro.html">Registro</a></li>
