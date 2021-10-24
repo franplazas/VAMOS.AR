@@ -48,14 +48,71 @@
             <h2>Contacto</h2>
         </div>
     </div>
-    <form action="">
-        <input type="text" name="Nombre" placeholder="Nombre" required>
-        <input type="text" name="e-mail" placeholder="e-mail" required>
-        <input type="text" name="Telefono" placeholder="Telefono" required>
-        <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
-        <input type="submit" value="ENVIAR" id="boton" required>
+    <section class="contact">
+        <div class="content">
+            <h2>Contactanos</h2>
+            <p>Si buscas un viaje personalizado, nuestro equipo altamente capacitado te asesorará para armar el viaje a
+                tu
+                medida.
+            </p>
+        </div>
+        <div id="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-icons-outlined">public</span>
+                    </div>
+                    <div class="text">
+                        <h3>Direccion</h3>
+                        <p>Palestina 610, Almagro</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-icons-outlined">wifi_calling</span>
+                    </div>
+                    <div class="text">
+                        <h3>Telefono</h3>
+                        <p>0245-571-9596</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <span class="material-icons-outlined">alternate_email</span>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>vamos.ar@gmail.com</p>
+                    </div>
 
-    </form>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Enviar Mensaje</h2>
+                    <div class="inputBox">
+                        <label for="name">Nombre Completo</label>
+                        <input name="name" required type="text" id="name">
+                    </div>
+                    <div class="inputBox">
+                        <label for="email">Correo electrónico </label>
+                        <input name="email" type="text" id="email" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" id="mensaje" required></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <button class="botons" type="submit" required>Enviar</button>
+                    </div>
+                    
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    
     <footer class="footer">
         <div class="footer__list">
             <ul>

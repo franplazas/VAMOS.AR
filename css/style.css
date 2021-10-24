@@ -710,55 +710,187 @@ body {
 }
 
 /*contacto*/
-form {
-  width: 450px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 20px;
+.contact {
+  position: relative;
+  min-height: 100pv;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-input,
-textarea {
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #0f6464;
+  margin-top: 30px;
+}
+
+.contact .content p {
+  font-weight: 500;
+  color: #185555;
+  font-size: 15px;
+}
+
+#container {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 17px;
-  border: none;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%;
+#container .contactInfo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 50px;
 }
 
-#boton {
-  background: #CD803E;
-  color: #EFEFF3;
+#container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #EFEFF3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+#container .contactInfo .box .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #242463;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 300;
+}
+
+#container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: #242463;
+}
+
+.contactForm {
+  width: 40%;
   padding: 20px;
+  margin-bottom: 20px;
+  background: #e4e1e1;
 }
 
-#boton:hover {
+.contactForm h2 {
+  font-size: 25px;
+  color: #285050;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.contactForm .inputBox input, textarea, label {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #242463;
+  outline: none;
+  resize: none;
+}
+
+.inputBox .botons {
+  width: 100px;
+  background: EE9630;
+  color: #CD803E;
+  border-radius: 45%;
   cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
 }
 
-@media (max-width: 411px) {
-  form {
-    width: 100%;
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
   }
-}
-
-@media (max-width: 750) {
-  form {
+  #container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #container .contactInfo {
+    margin-bottom: 40px;
+  }
+  #container .contactInfo, .contactForm {
     width: 100%;
   }
 }
 
 /*registro*/
+.contendRegistro p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
 .form__register {
   width: 400px;
   background: #EFEFF3;

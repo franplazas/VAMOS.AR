@@ -1,11 +1,15 @@
 /*registro*/
 @import url(_generales.scss);
 
+.contendRegistro p{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
 .form__register {
     width: 400px;
-    background: #EFEFF3
-
-    ;
+    background: #EFEFF3;
     padding: 30px;
     margin: auto;
     margin-top: 50px;
