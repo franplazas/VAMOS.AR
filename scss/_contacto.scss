@@ -3,9 +3,8 @@
 
 form {
     width: 450px;
-    margin: auto;
     background: rgba(0, 0, 0, 0.1);
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -13,8 +12,7 @@ input,
 textarea {
     width: 100%;
     margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
+    padding: 2px;
     font-size: 17px;
     border: none;
 }
