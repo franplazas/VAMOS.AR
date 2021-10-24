@@ -1,4 +1,5 @@
 /*contacto*/
+@import url(./_generales.scss);
 .contactodiv {
     width: 100%;
     height: 100%;
@@ -7,6 +8,7 @@
     padding: 10%;
     .contacto__horarios {
         text-align: center;
+        font-size: 15px;
         
     }
 

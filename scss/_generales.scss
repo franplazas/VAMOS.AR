@@ -138,29 +138,118 @@ body {
 
     .footer__social {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: right;
+        padding: 0 50px;
+
+        
     }
 
-    .footer__list ul {
-        font-size: 15px;
+
+.footer__list ul {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+
+    li a {
+        text-decoration: none;
+        display: flex;
+        color: $blanco;
+        margin: 0 10px;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+    color: $blanco;
+    opacity: 1;
+
+}
+}
+.footer__what{
+    color: #EFEFF3;
+}
+
+/*banner*/
+.banner {
+    width: 100%;
+    height: 400px;
+    animation: banner 15s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner__items {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+.banner__name {
+    width: 75%;
+    height: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+        color: $blanco;
+        font-size: 50px;
+    }
+
+    
+}
+
+@keyframes banner {
+
+    0%,
+    20% {
+        background-image: url(../imagenes/peritomoreno.jpeg);
+    }
+
+    25%,
+    45% {
+        background-image: url(../imagenes/salta.jpg);
+    }
+
+    50%,
+    70% {
+        background-image: url(../imagenes/pexels-photo-1154638.jpeg);
+    }
+
+    75%,
+    100% {
+        background-image: url(../imagenes/pexels-photo-1266831.jpeg);
+    }
+}
+
+@media (max-width: 300px) {
+    .banner__name {
+        width: 65%;
+        height: 45%;
+        z-index: 1;
         display: flex;
         justify-content: space-evenly;
-        list-style-type: none;
+        flex-direction: column;
+        align-items: flex-start;
 
-        li a {
-            text-decoration: none;
-            display: flex;
-            color: $blanco;
-            padding: 1vh;
+        h2 {
+            font-size: 20px;
         }
-    }
-
-    p {
-        text-align: center;
-        font-size: 14px;
-        color: $blanco;
-        opacity: 1;
 
     }
 }
