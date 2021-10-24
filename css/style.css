@@ -746,7 +746,13 @@ textarea {
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 411px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750) {
   form {
     width: 100%;
   }
